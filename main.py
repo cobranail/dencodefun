@@ -47,8 +47,7 @@ class MyCryptoNode(UIWidget.CryptoNode):
         self.mainframe=None
         self.autoscantemplate()
         self.content = ''
-        idx = self.m_choice_crypto.GetSelection()
-        funca = self.m_choice_crypto.GetString(idx)
+        funca = self.m_choice_crypto.GetString(0)
         self.createsettings(funcname=funca)
 
     def autoscantemplate(self):
