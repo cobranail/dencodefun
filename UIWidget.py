@@ -97,36 +97,43 @@ class CryptoNode ( wx.Panel ):
 		self.m_choice_crypto.SetSelection( 0 )
 		bSizer3.Add( self.m_choice_crypto, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_toggle_setting = wx.ToggleButton( self, wx.ID_ANY, u"Show Setting", wx.DefaultPosition, wx.DefaultSize, wx.BORDER_NONE )
+		self.m_toggle_setting = wx.ToggleButton( self, wx.ID_ANY, u"Show Setting", wx.DefaultPosition, wx.DefaultSize, wx.BORDER_SIMPLE )
 		bSizer3.Add( self.m_toggle_setting, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_button_encode = wx.Button( self, wx.ID_ANY, u"Encode", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT|wx.BORDER_SUNKEN )
+		self.m_button_encode = wx.Button( self, wx.ID_ANY, u"Encode", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_SIMPLE )
 		bSizer3.Add( self.m_button_encode, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_button_decode = wx.Button( self, wx.ID_ANY, u"Decode", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT|wx.BORDER_SUNKEN )
+		self.m_button_decode = wx.Button( self, wx.ID_ANY, u"Decode", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_SIMPLE )
 		bSizer3.Add( self.m_button_decode, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
 
 		bSizer3.Add( ( 0, 0), 0, wx.EXPAND, 5 )
 
 		self.m_checkBox_hex = wx.CheckBox( self, wx.ID_ANY, u"Hex", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.m_checkBox_hex.Hide()
+
 		bSizer3.Add( self.m_checkBox_hex, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
 		m_choice_codecChoices = [ u"ASCII", u"UTF-8", u"GBK" ]
 		self.m_choice_codec = wx.Choice( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, m_choice_codecChoices, 0 )
 		self.m_choice_codec.SetSelection( 0 )
+		self.m_choice_codec.Hide()
+
 		bSizer3.Add( self.m_choice_codec, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
 
 		bSizer3.Add( ( 0, 0), 0, wx.EXPAND, 5 )
 
-		self.m_button_show = wx.Button( self, wx.ID_ANY, u"Show", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT|wx.BORDER_SUNKEN )
+		self.m_button_show = wx.Button( self, wx.ID_ANY, u"Show", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_SIMPLE )
 		bSizer3.Add( self.m_button_show, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_button6 = wx.Button( self, wx.ID_ANY, u"Hide", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT|wx.BORDER_SUNKEN )
+		self.m_button6 = wx.Button( self, wx.ID_ANY, u"Hide", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_SIMPLE )
 		bSizer3.Add( self.m_button6, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
-		self.m_button_hide = wx.Button( self, wx.ID_ANY, u"Dismiss", wx.DefaultPosition, wx.DefaultSize, wx.BU_EXACTFIT|wx.BORDER_SUNKEN )
+		self.m_button_hide = wx.Button( self, wx.ID_ANY, u"Dismiss", wx.DefaultPosition, wx.DefaultSize, 0|wx.BORDER_SUNKEN )
+		self.m_button_hide.SetForegroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_BTNHIGHLIGHT ) )
+		self.m_button_hide.SetBackgroundColour( wx.Colour( 253, 0, 0 ) )
+
 		bSizer3.Add( self.m_button_hide, 0, wx.ALL|wx.ALIGN_CENTER_VERTICAL, 5 )
 
 

@@ -628,7 +628,7 @@
                                         <property name="value">0</property>
                                         <property name="window_extra_style"></property>
                                         <property name="window_name"></property>
-                                        <property name="window_style">wxBORDER_NONE</property>
+                                        <property name="window_style">wxBORDER_SIMPLE</property>
                                         <event name="OnToggleButton">on_show_setting</event>
                                     </object>
                                 </object>
@@ -691,7 +691,7 @@
                                         <property name="resize">Resizable</property>
                                         <property name="show">1</property>
                                         <property name="size"></property>
-                                        <property name="style">wxBU_EXACTFIT</property>
+                                        <property name="style"></property>
                                         <property name="subclass">; ; forward_declare</property>
                                         <property name="toolbar_pane">0</property>
                                         <property name="tooltip"></property>
@@ -701,7 +701,7 @@
                                         <property name="validator_variable"></property>
                                         <property name="window_extra_style"></property>
                                         <property name="window_name"></property>
-                                        <property name="window_style">wxBORDER_SUNKEN</property>
+                                        <property name="window_style">wxBORDER_SIMPLE</property>
                                         <event name="OnButtonClick">on_encode</event>
                                     </object>
                                 </object>
@@ -764,7 +764,7 @@
                                         <property name="resize">Resizable</property>
                                         <property name="show">1</property>
                                         <property name="size"></property>
-                                        <property name="style">wxBU_EXACTFIT</property>
+                                        <property name="style"></property>
                                         <property name="subclass">; ; forward_declare</property>
                                         <property name="toolbar_pane">0</property>
                                         <property name="tooltip"></property>
@@ -774,7 +774,7 @@
                                         <property name="validator_variable"></property>
                                         <property name="window_extra_style"></property>
                                         <property name="window_name"></property>
-                                        <property name="window_style">wxBORDER_SUNKEN</property>
+                                        <property name="window_style">wxBORDER_SIMPLE</property>
                                         <event name="OnButtonClick">on_decode</event>
                                     </object>
                                 </object>
@@ -819,7 +819,7 @@
                                         <property name="floatable">1</property>
                                         <property name="font"></property>
                                         <property name="gripper">0</property>
-                                        <property name="hidden">0</property>
+                                        <property name="hidden">1</property>
                                         <property name="id">wxID_ANY</property>
                                         <property name="label">Hex</property>
                                         <property name="max_size"></property>
@@ -883,7 +883,7 @@
                                         <property name="floatable">1</property>
                                         <property name="font"></property>
                                         <property name="gripper">0</property>
-                                        <property name="hidden">0</property>
+                                        <property name="hidden">1</property>
                                         <property name="id">wxID_ANY</property>
                                         <property name="max_size"></property>
                                         <property name="maximize_button">0</property>
@@ -985,7 +985,7 @@
                                         <property name="resize">Resizable</property>
                                         <property name="show">1</property>
                                         <property name="size"></property>
-                                        <property name="style">wxBU_EXACTFIT</property>
+                                        <property name="style"></property>
                                         <property name="subclass">; ; forward_declare</property>
                                         <property name="toolbar_pane">0</property>
                                         <property name="tooltip"></property>
@@ -995,7 +995,7 @@
                                         <property name="validator_variable"></property>
                                         <property name="window_extra_style"></property>
                                         <property name="window_name"></property>
-                                        <property name="window_style">wxBORDER_SUNKEN</property>
+                                        <property name="window_style">wxBORDER_SIMPLE</property>
                                         <event name="OnButtonClick">on_shownode</event>
                                     </object>
                                 </object>
@@ -1058,7 +1058,7 @@
                                         <property name="resize">Resizable</property>
                                         <property name="show">1</property>
                                         <property name="size"></property>
-                                        <property name="style">wxBU_EXACTFIT</property>
+                                        <property name="style"></property>
                                         <property name="subclass">; ; forward_declare</property>
                                         <property name="toolbar_pane">0</property>
                                         <property name="tooltip"></property>
@@ -1068,7 +1068,7 @@
                                         <property name="validator_variable"></property>
                                         <property name="window_extra_style"></property>
                                         <property name="window_name"></property>
-                                        <property name="window_style">wxBORDER_SUNKEN</property>
+                                        <property name="window_style">wxBORDER_SIMPLE</property>
                                         <event name="OnButtonClick">on_hidenode</event>
                                     </object>
                                 </object>
@@ -1086,7 +1086,7 @@
                                         <property name="aui_position"></property>
                                         <property name="aui_row"></property>
                                         <property name="best_size"></property>
-                                        <property name="bg"></property>
+                                        <property name="bg">253,0,0</property>
                                         <property name="bitmap"></property>
                                         <property name="caption"></property>
                                         <property name="caption_visible">1</property>
@@ -1102,7 +1102,7 @@
                                         <property name="dock_fixed">0</property>
                                         <property name="docking">Left</property>
                                         <property name="enabled">1</property>
-                                        <property name="fg"></property>
+                                        <property name="fg">wxSYS_COLOUR_BTNHIGHLIGHT</property>
                                         <property name="floatable">1</property>
                                         <property name="focus"></property>
                                         <property name="font"></property>
@@ -1131,7 +1131,7 @@
                                         <property name="resize">Resizable</property>
                                         <property name="show">1</property>
                                         <property name="size"></property>
-                                        <property name="style">wxBU_EXACTFIT</property>
+                                        <property name="style"></property>
                                         <property name="subclass">; ; forward_declare</property>
                                         <property name="toolbar_pane">0</property>
                                         <property name="tooltip"></property>
